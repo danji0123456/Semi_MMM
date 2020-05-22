@@ -71,7 +71,7 @@
 			
 				<br><br>
 			<tr>
-				<td rowspan="5" style="width: 700px;"><p style="width:600px; height:400px; background-image: url(/upload/dogImg/${d.dogImg }); background-position: center; background-size: cover; margin: 0 auto; margin-bottom:10px; margin-top: 2.5%;"></p></td>
+				<td rowspan="5" style="width: 600px; height: 400px;"><img src="${n.noticeImgs}"style="width: 100%; height: 100%;"></td>
 			</tr>
 				
 			<tr><td style=" width:300px; height:30px; font-size: 25px; font-weight:bold; text-align: center; border-radius: 20px; background-color:#B6EAFA;"><p>주인 : ${dog.dogMemberId }</p></td></tr>

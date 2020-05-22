@@ -75,7 +75,11 @@ public class InsertNoticeServlet extends HttpServlet {
 		Notice n = new Notice(0, imgeNoticeTitle, imgeNoticeWriter, imgeNoticeContent, null, imgeNoticeImgName, 0, dog.getDogId(), 0);
 		if(imgeNoticeImgName.equals("")) {
 			n.setNoticeImgs("/upload/dogImg/"+dog.getDogImg());
-			System.out.println(n.getNoticeImgs());
+			System.out.println("중간 확인 : "+n.getNoticeImgs());
+		}
+		if(n.getNoticeImgs().equals("/upload/dogImg/")) {
+			System.out.println("중간 확인2 : "+n.getNoticeImgs());
+			n.setNoticeImgs("/upload/memberImg/unnamed.png");
 		}
 
 		int result = new noticeService().noticeWrite(n);
