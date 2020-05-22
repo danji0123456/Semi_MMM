@@ -1,0 +1,67 @@
+@charset "UTF-8";
+#navbar_login>span {
+	margin: 20px;
+}
+#navbar {
+	border-radius: 2px;
+	padding: 15px 10px;
+	/* Large padding which will shrink on scroll (using JS) */
+	transition: 0.4s;
+	/* Adds a transition effect when the padding is decreased */
+	position: fixed;
+	/* Sticky/fixed navbar */
+	top: 0;
+	/* At the top */
+	z-index: 600;
+	margin: 0 auto;
+	background-color:white;
+	width:100%;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 7px 0 rgba(0, 0, 0, 0.19);
+}
+/* Display some links to the right */
+#navbar>div {
+	width: 33%;
+	height: 80px;
+	float: left;
+}
+#navbar_login {
+	text-align: right;
+}
+#navbar_login>span>a:hover {
+	border-bottom: 1.5px solid #B6EAFA;
+	transition: 0.5s;
+}
+#navbar_logo {
+	height: 80px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+#navbar_logo>a {
+	width: 100px;
+	height: 100px;
+	padding: 0;
+}
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 580px) {
+	#navbar {
+		padding: 20px 10px !important;
+		/* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+	}
+}
+#navbar_login>span {
+	line-height: 80px;
+}
+#navbar_login>span>div {
+	line-height: 40px;
+}
+#navbar_login>span>div>form>input {
+	margin-top : 20px;
+}
+#navbar_login>span>div>form>button {
+	margin-top : 20px;
+}
+#wrapper_menu {
+    float: left;
+}

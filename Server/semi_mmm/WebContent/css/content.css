@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body {
+	z-index: 1;
+	margin: 0 auto;
+	background-color: #FAFBFC;
+}
+@media (min-width : 1200px) {
+	.container {
+		max-width: 1500px;
+		background-color: white;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+}
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 100%;
+    height: 400px;
+  }
+  #carousel-area {
+  width:100%;
+  }
+  #content>div {
+  width: calc(1300px/3);
+  height: 500px;
+  display: inline-block;
+  text-align: center;
+}
